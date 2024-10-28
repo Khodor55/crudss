@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+  
+  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+
+}
+input{
+    outline: none;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+
+margin: 10px 0;
+
+
+}
+.head img{
+    width: 200px;
+}
+.inputs{
+
+}
+:root{
+    --colore :rgb(65, 6, 6) ;
+}
+::placeholder{
+    color:var(--colore);
+   
+   }
+   .head h1{
+    font-size: 23px;
+    margin-bottom: 10px;
+    color: black;
+
+   }
+   .head h1 span{
+    color: var(--colore);
+    margin-left: 5px;
+    transform: scale(1.1);
+    text-transform: uppercase;
+   }
+input{
+    width: 100%;
+    margin-top: 10px;
+    padding: 7px;
+    border-radius: 5px;
+    outline: transparent;
+    background: transparent;
+    border: 1px solid  black;
+   /* transition: 0.5s; */
+
+
+}
+ input:focus{
+ transform: scale(1.1);
+ z-index: 10;
+}
+.inputs .price{
+   display: flex;
+ align-items: center;
+ flex-wrap: wrap;
+
+}
+@media (max-width:784px) {
+    .inputs .price{
+        justify-content: center;
+    }
+}
+.inputs .price input{
+    width: 20%;
+    margin-right: 10px;
+}
+.inputs #total{
+    background: darkred;
+    padding: 8px;
+position: relative;
+top: 5px;
+border-radius: 5px;
+color: white;
+}
+.inputs #total::before{
+    content: 'totale:';
+}
+
+button{
+    width: 100%;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    background: transparent;
+    color: black;
+ background: var(--colore);
+    box-shadow: 0px 0px 1px black;
+transition: 0.2s;
+background: ;
+color: white;
+}
+button:hover{
+   background:rgba(255, 255, 255, 0.749);
+   color: black;
+
+}
+.searchBlock .btnSearch{
+display: flex;
+justify-content: space-between;
+
+
+}
+
+.searchBlock .btnSearch button{
+  margin: 10px;
+  font-size: 13px;
+}
+table{
+
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+@media (max-width:784px) {
+    table{
+        width: 50%;
+        padding: 200px;
+    }
+}
+table th{
+    text-transform: uppercase;
+}
+
+#clearAll{
+    margin: 10px 0;
+    display: none;
+}
+table tr button{
+    border-radius: 3px;
+color: var(--colore);
+background: transparent;
+    border: 1px solid var(--colore);
+font-weight: 700;
+}
